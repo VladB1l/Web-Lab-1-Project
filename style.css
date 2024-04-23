@@ -70,6 +70,7 @@ h3 {
   padding: 0 27px;
   font-size: 20px;
   font-weight: 700;
+  position: relative;
 }
 
 .nav li a:hover {
@@ -89,6 +90,42 @@ h3 {
 .burger img {
   width: 32px;
   height: 32px;
+}
+
+.horizontalMenu {
+  top: 0;
+  right: -200px;
+  position: absolute;
+  width: 200px;
+  height: 100%;
+  background-color: white;
+  border-radius: 30px 0 0 30px;
+  color: black;
+  transition: 0.4s;
+  padding-top: 40px;
+}
+
+.horizontalMenu li a {
+  color: black;
+  cursor: pointer;
+}
+
+.closeBtn {
+  font-weight: 800;
+  font-size: 28px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.horizontalMenu li a:hover {
+  border-bottom: 1px solid black;
+}
+
+.horizontalMenu .nav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 /* ---------------------------------------------------------------------------------------------------- */
 
